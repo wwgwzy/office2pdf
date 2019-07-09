@@ -1,5 +1,5 @@
 # office2pdf
-convert(print) office (doc, ppt) to pdf file
+convert(print) office file(doc, ppt) to pdf file
 
 转换（打印）同文件夹和子文件夹下的 office 文件到pdf文件，兼容设备以便浏览。
 
