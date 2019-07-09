@@ -36,14 +36,9 @@ def printpdf(inputFileName,lerrordir):
         doc2pdf(str(inputFileName), str(pdfName))
     print "pdf printed"
 
-
-cwd = os.path.split(os.path.realpath(sys.argv[0]))[0]
-os.walk(cwd)
-os.chdir(cwd)
-"""print pdf in */*"""
-lerrordir = ''
-
-if __name__ == "__main__":
+if __name__ == "__main__":    
+    cwd = os.path.split(os.path.realpath(sys.argv[0]))[0]
+    lerrordir = ''
     for walkr in os.walk(cwd):
         officefiles = [file for file in Path(walkr[0]).glob("*.*") if file.suffix in ('.ppt', '.pptx', '.doc', '.docx' ) and not str(file).startswith('$')]
         for officefile in officefiles:
