@@ -30,7 +30,7 @@ def printpdf(inputFileName,lerrordir):
         print "pdf exists"
         return
     print "printing...",
-    if inputFileName.suffix in ('.ppt', 'pptx'):
+    if inputFileName.suffix in ('.ppt', '.pptx'):
         ppt2pdf(str(inputFileName), str(pdfName))
     elif inputFileName.suffix in('.doc', '.docx'):
         doc2pdf(str(inputFileName), str(pdfName))
